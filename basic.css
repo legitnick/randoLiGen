@@ -1,0 +1,35 @@
+address{
+    position: absolute;
+    bottom: 0.5em;
+    color: dimgray;
+}
+body,*,html{
+    margin:0;
+    padding:0;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+p{
+    flex-grow:30;
+    font-size: 1em;
+}
+div{
+    flex-grow:55   ;
+    align-content: space;
+    border: 1px solid black;
+}
+input{
+    border-radius: 7px;
+}
+code{
+    
+}
+::-webkit-input-placeholder {
+    text-align: center;
+ }

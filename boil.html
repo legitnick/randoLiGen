@@ -7,15 +7,19 @@
         <title>rarr</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="basic.css">
     </head>
     <body>
+        <h1>Hello there!</h1>
+        <p>Tis' a site for quickly generating random arrays, as may be needed when solving some coding problems</p>
         <div id="app">
-            <input v-model="len"  placeholder="len">
-            <input v-model="min"  placeholder="min" >
-            <input v-model="max"  placeholder="max">
-            <span >{{ rarr }}</span>
+            <input v-model="len"  placeholder="len"  id="0">
+            <input v-model="min"  placeholder="min"  id="1">
+            <input v-model="max"  placeholder="max" id="2`">
+            <code >{{ rarr() }}</code>
+            <button v-on:click="rerun()">Reroll</button>
         </div>
+        <address>You can message me by mail: ano3erone@gmail.com</address>
         <script src="https://unpkg.com/vue@next"></script>
         <script src="index.js"></script>
     </body>

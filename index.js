@@ -6,7 +6,7 @@ const randLiGen = {
 			max:null,
 		}
 	},
-	computed: {
+	methods: {
 		rarr() {
 			let str = "[";
 			for ( i = 0; i<this.len; i++) {
@@ -22,6 +22,11 @@ const randLiGen = {
 			str+="]";
 			return str=="[]"?null:str;
 			},
+			rerun(){
+				this.max-=0.5;
+				this.max+=0.5;
+			},
+			
 	}
 
   }
